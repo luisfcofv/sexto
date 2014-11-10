@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B17" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="M1D-B1-QQT">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Matemáticas-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MenuViewController" customModule="matematicas" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +15,153 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cQg-H2-SlG">
+                                <rect key="frame" x="241" y="350" width="160" height="80"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="RRf-Sz-gKm"/>
+                                    <constraint firstAttribute="height" constant="80" id="kW1-pJ-AOz"/>
+                                </constraints>
+                                <state key="normal" title="Aritmética">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="RRf-Sz-gKm"/>
+                                        <exclude reference="kW1-pJ-AOz"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="RRf-Sz-gKm"/>
+                                        <include reference="kW1-pJ-AOz"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <segue destination="7Na-eF-PGd" kind="show" id="0hx-Ia-cMl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3a7-FQ-oBD">
+                                <rect key="frame" x="241" y="233" width="160" height="80"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="MBE-31-NMz"/>
+                                    <constraint firstAttribute="width" constant="160" id="qTZ-iU-GeG"/>
+                                </constraints>
+                                <state key="normal" title="Geometría">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="MBE-31-NMz"/>
+                                        <exclude reference="qTZ-iU-GeG"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="MBE-31-NMz"/>
+                                        <include reference="qTZ-iU-GeG"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <segue destination="Uzg-Kp-XH9" kind="show" id="Yzp-8V-QvY"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="cQg-H2-SlG" secondAttribute="centerY" constant="-160" id="4sp-Mq-gI1">
+                                <variation key="heightClass=regular-widthClass=regular" constant="-120"/>
+                            </constraint>
+                            <constraint firstAttribute="centerX" secondItem="cQg-H2-SlG" secondAttribute="centerX" id="MxS-OH-2Qk"/>
+                            <constraint firstAttribute="centerX" secondItem="3a7-FQ-oBD" secondAttribute="centerX" id="TxC-Bf-sBB"/>
+                            <constraint firstAttribute="centerY" secondItem="3a7-FQ-oBD" secondAttribute="centerY" constant="80" id="eVs-WT-aGS">
+                                <variation key="heightClass=regular-widthClass=regular" constant="120"/>
+                            </constraint>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="TxC-Bf-sBB"/>
+                                <exclude reference="eVs-WT-aGS"/>
+                                <exclude reference="4sp-Mq-gI1"/>
+                                <exclude reference="MxS-OH-2Qk"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="TxC-Bf-sBB"/>
+                                <include reference="eVs-WT-aGS"/>
+                                <include reference="4sp-Mq-gI1"/>
+                                <include reference="MxS-OH-2Qk"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <navigationItem key="navigationItem" title="Matemáticas" id="6oO-FG-hOt"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1137" y="350"/>
+        </scene>
+        <!--Aritmetica View Controller-->
+        <scene sceneID="cf2-g0-G6W">
+            <objects>
+                <viewController id="7Na-eF-PGd" customClass="AritmeticaViewController" customModule="matematicas" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ONK-Fg-ZgX"/>
+                        <viewControllerLayoutGuide type="bottom" id="fjJ-9f-uLt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QTW-Ht-LAJ">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RFd-z6-fuX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1997.25" y="719.25"/>
+        </scene>
+        <!--Geometria View Controller-->
+        <scene sceneID="1SE-vp-6D4">
+            <objects>
+                <viewController id="Uzg-Kp-XH9" customClass="GeometriaViewController" customModule="matematicas" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yB8-Vg-Gqd"/>
+                        <viewControllerLayoutGuide type="bottom" id="vL5-nc-GDR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mfn-f5-Bcv">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xzN-bM-G4e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1997.25" y="29.25"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="sz7-yV-uLd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="M1D-B1-QQT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="BTA-Mk-al9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="P77-zF-Bjt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="em3-jC-tJb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="200" y="350"/>
         </scene>
     </scenes>
 </document>

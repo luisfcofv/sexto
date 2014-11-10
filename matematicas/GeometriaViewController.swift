@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  GeometriaViewController.swift
 //  matematicas
 //
 //  Created by Luis Flores on 11/9/14.
@@ -8,18 +8,15 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class GeometriaViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.title = "Geometría"
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
-

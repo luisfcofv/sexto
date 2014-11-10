@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		4AE7D0B91A10319300A70FB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE7D0B81A10319300A70FB7 /* AppDelegate.swift */; };
-		4AE7D0BB1A10319300A70FB7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE7D0BA1A10319300A70FB7 /* ViewController.swift */; };
 		4AE7D0BE1A10319300A70FB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AE7D0BC1A10319300A70FB7 /* Main.storyboard */; };
 		4AE7D0C01A10319300A70FB7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AE7D0BF1A10319300A70FB7 /* Images.xcassets */; };
 		4AE7D0C31A10319300A70FB7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AE7D0C11A10319300A70FB7 /* LaunchScreen.xib */; };
 		4AE7D0CF1A10319300A70FB7 /* matematicasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE7D0CE1A10319300A70FB7 /* matematicasTests.swift */; };
+		4AE7D0D91A1037F700A70FB7 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE7D0D81A1037F700A70FB7 /* MenuViewController.swift */; };
+		4AE7D0DB1A10428F00A70FB7 /* GeometriaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE7D0DA1A10428F00A70FB7 /* GeometriaViewController.swift */; };
+		4AE7D0DD1A1042A100A70FB7 /* AritmeticaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE7D0DC1A1042A100A70FB7 /* AritmeticaViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +31,15 @@
 		4AE7D0B31A10319300A70FB7 /* matematicas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = matematicas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AE7D0B71A10319300A70FB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4AE7D0B81A10319300A70FB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4AE7D0BA1A10319300A70FB7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4AE7D0BD1A10319300A70FB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4AE7D0BF1A10319300A70FB7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4AE7D0C21A10319300A70FB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		4AE7D0C81A10319300A70FB7 /* matematicasTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = matematicasTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AE7D0CD1A10319300A70FB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4AE7D0CE1A10319300A70FB7 /* matematicasTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = matematicasTests.swift; sourceTree = "<group>"; };
+		4AE7D0D81A1037F700A70FB7 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		4AE7D0DA1A10428F00A70FB7 /* GeometriaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeometriaViewController.swift; sourceTree = "<group>"; };
+		4AE7D0DC1A1042A100A70FB7 /* AritmeticaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AritmeticaViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +82,9 @@
 			isa = PBXGroup;
 			children = (
 				4AE7D0B81A10319300A70FB7 /* AppDelegate.swift */,
-				4AE7D0BA1A10319300A70FB7 /* ViewController.swift */,
+				4AE7D0DC1A1042A100A70FB7 /* AritmeticaViewController.swift */,
+				4AE7D0D81A1037F700A70FB7 /* MenuViewController.swift */,
+				4AE7D0DA1A10428F00A70FB7 /* GeometriaViewController.swift */,
 				4AE7D0BC1A10319300A70FB7 /* Main.storyboard */,
 				4AE7D0BF1A10319300A70FB7 /* Images.xcassets */,
 				4AE7D0C11A10319300A70FB7 /* LaunchScreen.xib */,
@@ -212,8 +218,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AE7D0BB1A10319300A70FB7 /* ViewController.swift in Sources */,
+				4AE7D0DB1A10428F00A70FB7 /* GeometriaViewController.swift in Sources */,
+				4AE7D0D91A1037F700A70FB7 /* MenuViewController.swift in Sources */,
 				4AE7D0B91A10319300A70FB7 /* AppDelegate.swift in Sources */,
+				4AE7D0DD1A1042A100A70FB7 /* AritmeticaViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
